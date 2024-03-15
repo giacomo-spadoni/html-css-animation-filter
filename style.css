@@ -82,8 +82,3 @@
     width: 60px;
     height: 20px;
 }
-
-h3 {
-    position: relative;
-    z-index: 999;
-}

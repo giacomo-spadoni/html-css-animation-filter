@@ -281,3 +281,8 @@
         transform: rotate(-360deg);
     }
 }
+
+h3 {
+    position: relative;
+    z-index: 999;
+}
