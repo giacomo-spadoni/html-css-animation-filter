@@ -1,0 +1,283 @@
+.ex-1-square {
+    transition: 2s ease-in-out;
+}
+
+.ex-1-square:hover {
+    background-color: red;
+}
+
+.ex-2-square {
+    transition: 2s;
+}
+
+.ex-2-square:active {
+    width: 100%;
+}
+
+.ex-3-square {
+    transition: 1s ease-in-out;
+}
+
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+
+.ex-4-square {
+    transition: 1s ease-in-out;
+}
+
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+.ex-5-square {
+    transition: 1s ease-in-out;
+}
+
+.ex-5-square:hover {
+    scale: 2;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+.ex-7-img {
+    transition: 1s ease-in-out;
+}
+
+.ex-7-img:hover {
+    filter: grayscale(0.4) sepia(0.6);
+}
+
+.ex-8-img {
+    transition: 1s ease-in-out;
+}
+
+.ex-8-img:hover {
+    filter: grayscale(0.4) sepia(0.6);
+    border-radius: 15px;
+}
+
+.ex-9-img {
+    transition: 2s ease-in-out;
+}
+
+.ex-9-img:hover {
+    filter: grayscale(0.4) sepia(0.6);
+    border-radius: 15px;
+    scale: 1.5;
+}
+
+.ex-10-icon {
+    animation: loop-rotation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes loop-rotation {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.ex-11-icon:hover {
+    animation: fast-slow;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes fast-slow {
+    0% {
+        transform: rotate(0);
+    }
+
+    80% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: move-loading-right;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes move-loading-right {
+    0% {
+        left: 10%;
+    }
+
+    50% {
+        left: calc(100% - 60px);
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: move-loading-left;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes move-loading-left {
+    0% {
+        right: 10%;
+    }
+
+    50% {
+        right: calc(100% - 60px);
+    }
+
+    100% {
+        right: 10%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: rotate-loading-right;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate-loading-right {
+    0% {
+        left: 10%;
+    }
+
+    28% {
+
+        left: calc(100% - 30px);
+        transform: rotate(0);
+        top: -10px;
+    }
+
+    29% {
+        top: -30px;
+    }
+
+    30% {
+        top: -30px;
+        transform: rotate(90deg);
+    }
+
+    50% {
+        top: 70px;
+        transform: rotate(90deg);
+        left: calc(100% - 30px);
+    }
+
+    51% {
+        top: 55px;
+        transform: rotate(180deg);
+    }
+
+    75% {
+        right: calc(0% - 30px);
+        transform: rotate(180deg);
+        top: 55px;
+    }
+
+    76% {
+        top: 70px;
+        transform: rotate(270deg);
+        left: calc(0% - 30px);
+    }
+
+    92% {
+        transform: rotate(270deg);
+        left: calc(0% - 30px);
+        top: -30px;
+    }
+
+    93% {
+        transform: rotate(360deg);
+        top: -10px;
+        left: calc(0% - 30px);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: rotate-loading-left;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate-loading-left {
+    0% {
+        right: 10%;
+    }
+
+    28% {
+
+        right: calc(100% - 30px);
+        transform: rotate(0);
+        bottom: -10px;
+    }
+
+    29% {
+        bottom: -30px;
+    }
+
+    30% {
+        bottom: -30px;
+        transform: rotate(-90deg);
+    }
+
+    50% {
+        bottom: 70px;
+        transform: rotate(-90deg);
+        right: calc(100% - 30px);
+    }
+
+    51% {
+        bottom: 55px;
+        transform: rotate(-180deg);
+    }
+
+    75% {
+        right: calc(0% - 30px);
+        transform: rotate(-180deg);
+        bottom: 55px;
+    }
+
+    76% {
+        bottom: 70px;
+        transform: rotate(-270deg);
+        right: calc(0% - 30px);
+    }
+
+    92% {
+        transform: rotate(-270deg);
+        right: calc(0% - 30px);
+        bottom: -30px;
+    }
+
+    93% {
+        transform: rotate(-360deg);
+        bottom: -10px;
+        right: calc(0% - 30px);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
